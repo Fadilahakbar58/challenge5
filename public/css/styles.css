@@ -1,0 +1,301 @@
+/* Fixed Navbar */
+body {
+    font-family: Helvetica;
+    background-color: #E5E5E5;
+}
+
+.sidenav {
+    height: 100%;
+    width: 95px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #0D28A6;
+    overflow-x: hidden;
+    padding-top: 20px;
+    list-style: none;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding-right: 25px;
+}
+
+.sidenav li {
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+}
+
+.sidenav .nav-logo {
+    position: absolute;
+    height: 34px;
+    left: 5px;
+    top: 17px;
+    background-color: #CFD4ED;
+    margin-left: 20px;
+    z-index: 2;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 160px;
+    /* Same as the width of the sidenav */
+    font-size: 28px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* Nav Bar */
+
+.navbar {
+    box-shadow: 30px;
+}
+
+.container-fluid {
+    background-color: white;
+    height: 70px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Responsive Side Bar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(69, 162, 158, 0.2);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(69, 162, 158, 0.6);
+    cursor: pointer;
+}
+
+body {
+    background-color: #e6e6e6;
+}
+
+.page .sidebar {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 255px;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-left: 95px;
+    /* transition: all 0.3s ease; */
+}
+
+.page .content {
+    margin-left: 300px;
+    /* transition: all 0.3s ease; */
+}
+
+.navigationBar {
+    background-color: white;
+    height: 50px;
+    display: flex;
+    padding: 38px 0px;
+    align-items: center;
+    box-shadow: 0 4px 2px -2px #c5c6c7;
+}
+
+.navbar-brand {
+    position: absolute;
+    width: 100px;
+    height: 34px;
+    left: 24px;
+    top: 18px;
+    background-color: #CFD4ED;
+}
+
+.sidebarToggle {
+    font-size: 16px;
+    color: rgb(0, 0, 0, 0.8);
+    z-index: 999;
+    transition: all 0.3s ease;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.page .content .container {
+    margin: 30px;
+    background: #fff;
+    padding: 50px;
+    line-height: 28px;
+}
+
+body.active .page .sidebar {
+    left: -250px;
+}
+
+body.active .page .content {
+    margin-left: 0;
+    width: 100%;
+}
+
+.sidebar-header {
+    padding: 10px 25px 10px 15px;
+}
+
+.logo-container {
+    max-width: 40px;
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin: 8px;
+    padding: 6px 8px;
+}
+
+.logo-sidebar {
+    width: 100%;
+    height: auto;
+}
+
+.navigation-list {
+    list-style-type: none;
+    padding: 0px 18px;
+    margin-top: 30px;
+}
+
+.navigation-list-item {
+    padding: 12px 10px 10px 10px;
+    margin: 15px 0px;
+}
+
+.navigation-list-item:hover {
+    background: #CFD4ED;
+    box-shadow: 0 0 0.4em rgb(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.navigation-list-item.active {
+    background: #0D28A6;
+    box-shadow: 0 0 0.4em rgb(255, 255, 255, 0.1);
+}
+
+.navigation-link {
+    color: black;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.navigation-link i {
+    font-size: 18px;
+}
+
+.navigation-list-item:hover .navigation-link {
+    color: black;
+}
+
+.navigation-list-item.active .navigation-link {
+    color: black;
+    font-weight: bold;
+}
+
+.teams-title-container {
+    padding-left: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.teams-title {
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+}
+
+.teams-list {
+    padding-left: 32px;
+    list-style-type: none;
+}
+
+.teams-item {
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.teams-item i {
+    font-size: 12px;
+}
+
+.content .navigationBar .search-container {
+    margin-left: 100px;
+}
+
+
+/* Content */
+.content-wrapper {
+    margin-left: 360px;
+    font-family: Helvetica;
+}
+
+.content-wrapper .button-list a {
+    background-color: white;
+    color: #CFD4ED;
+    font-weight: bold;
+}
+
+.content-wrapper .button-list a:hover {
+    background-color: #CFD4ED;
+    color: #0D28A6;
+    font-weight: bold;
+    outline-color: #0D28A6;
+}
+
+.content-wrapper .car-body {
+    font-size: 14px;
+    font-family: Helvetica;
+    border-radius: 10px;
+}
+
+.content-wrapper .car-body a {
+    font-size: small;
+    font-family: Helvetica;
+}
+
+.form-control {
+    width: 50%;
+}
+.form-select {
+    width: 50%;
+}
+
+/* Create CSS */
+.content-wrapper .form-list {
+    font-size: 10px;
+}
